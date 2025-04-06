@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.page {
+    display: none;  
+    margin-top: 55px;
+}
+
+.page.active {
+    display: block; 
+}
+
+.page0 {
+    background-color: aquamarine;
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+.page1 {
+    background-color: rgb(187, 120, 255);
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+.page2 {
+    background-color: orange;
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+.page3 {
+    background-color: burlywood;
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+.page4 {
+    background-color: rgb(202, 32, 117);
+    width: 100%;
+    height: calc(100vh - 55px);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: small;
+    color: red;
+}
+
+header{
+    display: flex;
+    background-color: gray;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.flaticon img {
+    flex: 1;
+    width: 40px;
+    margin: 5px;
+}
+
+.butoes {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.butoes nav a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+}
