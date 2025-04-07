@@ -1,3 +1,15 @@
+/*
+COMENTARIOS
+
+rgb(205,133,63) = marron/Brown claro
+rgb(139,69,19) = marron/Brown escuro
+
+*/
+:root {
+    --marron-claro: rgb(205,133,63);
+    --marron-escuro: rgb(139,69,19) ;  
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -25,31 +37,31 @@ body::-webkit-scrollbar{
 .page0 {
     background-color: aquamarine;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: calc(100dvh - 55px);
 }
 
 .page1 {
     background-color: rgb(187, 120, 255);
     width: 100%;
-    height: calc(100vh - 55px);
+    height: calc(100dvh - 55px);
 }
 
 .page2 {
     background-color: orange;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: calc(100dvh - 55px);
 }
 
 .page3 {
     background-color: burlywood;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: calc(100dvh - 55px);
 }
 
 .page4 {
     background-color: rgb(202, 32, 117);
     width: 100%;
-    height: calc(100vh - 55px);
+    height: calc(100dvh - 55px);
 }
 
 footer {
@@ -67,7 +79,7 @@ footer {
 
 header{
     display: flex;
-    background-color: gray;
+    background-color: var(--marron-claro);
     position: fixed;
     align-items: center;
     justify-content: space-between;
@@ -90,7 +102,11 @@ header{
 
 .butoes nav a {
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: var(--marron-escuro);
     text-decoration: none;
     padding: 5px;
+}
+
+main .page3 img {
+    width: 100%;
 }
