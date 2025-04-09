@@ -8,6 +8,10 @@
     --cinza: rgb(128, 128, 128);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
